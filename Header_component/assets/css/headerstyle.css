@@ -1,0 +1,88 @@
+*{margin: 0;padding: 0;box-sizing:border-box;}
+
+/* Common CSS Start  */
+a{text-decoration:none;}
+.btn:focus{box-shadow: none;}
+
+:root{
+    --heading-color:#292930;
+    --text-color1:#ff497c;
+}
+/* Common CSS End  */
+
+.top-header{
+    padding: 11px 20px;;
+  background-color: #262626;
+}
+.top-header .buyNowBtn{
+    background: #82b440;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #82b440;
+    font-size: 14px;
+}  
+
+/* Header bottom Start  */
+.header_bottom .navbar-nav .nav-link{
+    color: #262626;
+    font-weight: 700;
+    padding: 0 30px;
+}
+.header_bottom .buyNowShopingBtn{
+    background-color: #3577f0;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius:5px;
+}
+.header_bottom{
+    top: 70px;
+}
+.header_bottom .container{
+    border-radius: 10px;
+}
+.header_bottom .nav-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+.header_bottom .nav-link:hover::after {
+    width: 100%;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }  
+   .navbar-toggler:focus{box-shadow: none;} 
+/* Header Bottom End  */
+
+/* Banner Start  */
+.banner{
+    background-image:url(../images/banner-bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+}
+.banner small{
+    color: var(--text-color1);
+}
+/* Banner End  */
