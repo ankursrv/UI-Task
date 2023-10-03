@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Start  *****************/
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.logo img {
+    width: 130px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+
+/* Header End  *****************/
+
+
+/* Banner Start  ************/
+.row {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    background: radial-gradient(white, pink);
+
+}
+
+
+
+/************ Banner image ko Responsive kiya hai  *************/
+.col-1 {
+    padding-left: 20px;
+}
+
+.col-2 {
+    min-width: 300px;
+
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+/************ Banner image ko Responsive kiya hai  *************/
+.col-2,
+h1 {
+    font-size: 40px;
+}
+
+.col-2,
+h1,
+p {
+    padding: 10px 0;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 5px 30px;
+    background-color: orangered;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.col-1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Banner End  ************/
+
+/* Feature Categories Start******** */
+.categories {
+    margin: 40px 0;
+    padding: 0 40px;
+}
+
+.row-categories {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 25px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+/* .small{
+    padding: 0 40px;
+} */
+h2 {
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+h2::after {
+    /*  heading me under line*/
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #ff523b;
+    left: 50%;
+    bottom: 0;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+/* Feature Categories End******** */
+
+
+/* Feature Product Start **********/
+.col-4 {
+    min-width: 300px;
+
+}
+
+.row-categories img {
+    max-width: 250px;
+}
+
+.title {
+    margin-top: 10px;
+}
+
+
+.row-feature-product {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.fp-img {
+    margin-bottom: 0px;
+    transition: transform 0.5s
+}
+
+.fp-img:hover {
+    transform: translateY(-5px);
+}
+
+.rating,
+.fa {
+    color: #f7b733;
+    margin-top: 10px;
+}
+
+/* Feature Product End **********/
+
+/* Latest Product start **************/
+
+/******* Same style & HTML Feature Product ********/
+
+/* Latest Product End ***************/
+
+
+/* Offer Start*************** */
+.offer-row {
+    display: grid;
+    grid-template-columns: auto 500px;
+    grid-column-gap: 0px;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+    background: radial-gradient(white, pink);
+    padding: 80px 0;
+}
+
+#offer-col-5 {
+    padding: 25px 0 10px 0;
+}
+
+#offer-img {
+    max-width: 320px;
+}
+
+#offer-disc {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.offer-title {
+    /* padding-bottom: 20px; */
+}
+
+.offer-head {
+    padding: 20px 0;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+#buynow-btn {
+    margin-top: 20px;
+}
+
+#buynow-btn a {
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Offer End *****************/
+
+/* testimonial start  ****************/
+.testimonial-row {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    grid-column-gap: 10px;
+}
+
+.testimonial-img img {
+    border-radius: 50%;
+    max-width: 70px;
+}
+
+.testimonial-col {
+    text-align: center;
+    padding: 0 30px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+.testimonial-col:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-col p {
+    padding: 0 0 5px 0;
+}
+
+.testimonial-rating,
+.fa {
+    color: orangered;
+    padding-bottom: 25px;
+}
+
+.testimonial-col h3 {
+    padding: 10px 0;
+}
+
+#inveted-comma {
+    font-size: 2rem;
+    color: #ff523b;
+    padding: 30px 0 10px 0;
+}
+
+/* testimonial End ***************/
+
+
+/* Brand logo start  ************/
+.brand-row {
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    justify-content: center;
+    justify-items: center;
+    grid-column-gap: 0px;
+}
+
+.brand-col img {
+    max-width: 150px;
+    padding: 0 10px;
+    filter: grayscale(100%);
+    /* brand logo hover hone pr color-full dikhe uske liye filter ka use kiya hai*/
+    transition: ease 0.5s;
+}
+
+.brand-col img:hover {
+    filter: grayscale(0%);
+}
+
+/* Brand logo End *************/
+
+/* Footer start  *****************/
+.footer {}
+
+.footer-section {
+    /* border: 9px solid blue; */
+    margin-top: 100px;
+}
+
+.footer-row {
+    display: grid;
+    grid-template-columns: 300px 400px 200px 200px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    padding: 60px 0;
+}
+
+.footer-img {
+    max-width: 100px;
+
+}
+
+.footer-p {
+    color: white;
+    padding-bottom: 20px;
+}
+
+#footer-p-2 {
+    color: white;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    max-width: 50%;
+    transform: translateX(50%);
+}
+
+h5 {
+    font-size: 1.2rem;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+    text-align: center;
+}
+
+.usefullink-list li,
+.followus-list li {
+    list-style: none;
+    line-height: 1.3rem;
+}
+
+.usefullink-list li a,
+.followus-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Footer End  ********************/
+
+@media screen and (max-width: 700px) {
+    .container{
+        /* display: block; */
+        width: 100%;
+        padding: 20px 0px 15px 50px;
+        
+        /* display: none; */
+    }
+    .row{
+        width: 100%;
+    }
+   
+}
