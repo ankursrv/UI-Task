@@ -1,0 +1,263 @@
+:root {
+    --text-primary-color: #283269;
+    --text-secondary-color: #EE0279;
+    --text-third-color: #9e006e;
+    --white: #fff;
+    --primary-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Source Serif Pro', serif;
+    --btn-one-color: #97BB00;
+    --btn-two-color: #38B5AB;
+    --btn-three-color: #EE0279;
+    --btn-four-color: #283269;
+
+    --card-one-color: #FBFFE8;
+    --card-two-color: #D3FFFC;
+    --card-three-color: #FFE9E9;
+    --card-four-color: #E3E8FF;
+
+}
+body{
+    font-family: var(--primary-font);
+    color: var(--text-primary-color);
+}
+a{
+    color: var(--text-primary-color); 
+}
+
+/* Header Start  */
+.navbar{
+    background-color: #FAFAFA;
+    
+}
+ 
+.navbar .navbar-nav .nav-item .nav-link {
+    font-family: var(--primary-font);
+    color: var(--text-primary-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 0px;
+    padding-left: 32px;
+}
+
+.navbar .navbar-nav .nav-item .active {
+    color: var(--text-secondary-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--text-secondary-color);
+}
+
+.navbar-brand img {
+    width: 135px;
+}
+
+
+/* Header End */
+
+/* banner start  */
+.banner{
+    width: 100%;
+    height: 715px;
+    background-image: url(../images/MaskGroup.jpg);
+    /* background-image: linear-gradient(310deg, rgba(121, 40, 202, .3),rgba(238, 2, 121, 0.3)),url('/images/Mask\ Group.jpg'); */
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 81px;
+}
+.banner h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 81px;
+    font-family: var(--secondary-font);
+}
+    
+.banner p{
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 400;
+    margin-top: 28px;
+}
+    
+   .banner span{
+    background-color: white;
+    border-radius: 8px;
+    color: var(--text-third-color);
+    padding: 0px 8px;
+   }
+   .banner span span{
+    color: var(--text-secondary-color);
+   }
+   /* banner End  */
+   
+   /* Card Start  */
+
+   /* card overlap banner and get the margin top  */
+   .margincard-banner{
+    margin-top: -200px;
+   }
+  
+.card h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+    
+.card p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 31px;
+}
+    
+.card .btn{
+    padding: 10px 30px 10px 23px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    background-color: var(--btn-one-color);
+    color: white;
+    border: transparent;
+}
+.card .btn-two{
+    background-color: var(--btn-two-color);
+}
+.card .btn-three{
+    background-color: var(--btn-three-color);
+}
+.card .btn-four{
+    background-color: var(--btn-four-color);
+}
+
+.card i{
+    padding-left: 23px;
+}
+
+
+.card-res{
+    
+}
+.card-two{
+    background-color: var(--card-two-color);
+}
+.card-three{
+    background-color: var(--card-three-color);
+}
+.card-four{
+    background-color: var(--card-four-color);
+}
+ /* Card End    */
+
+ /* Footer Start  */
+.footer-info img{
+    width: 118px;
+    height: 36px;
+}
+
+#info-one{
+    font-weight: 300;
+    font-size: 18px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+    
+.footer-info p{
+    font-size: 1rem;
+    margin: 0px;
+}
+
+.resources li{
+    list-style: none;
+    
+}
+h5{
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.resources a{
+    text-decoration: none;
+    
+    font-size: 1rem;
+   display: block; 
+   padding: 5px 0;
+}
+.social-link a{
+    font-size: 2rem;
+}
+.linked a{
+    padding-right: 30px;
+}
+.twitter a{
+    color: #55ACEE;
+}
+
+.ft-bottom p{
+ display: inline-block;
+ color: white;
+}
+.footer-bottom p{
+    padding: 16px 0;
+   
+}
+.footer-bottom{
+    background-color: #283269;
+    
+}
+    
+
+ /* Footer End  */
+
+/* media Queary */
+
+/* Banner media Queary  */
+    @media screen and (max-width:375px){
+        .banner h1{
+            padding-top: 13%;
+            line-height: 60px;
+        }
+            
+        .banner{
+            height: 750px;
+            
+        }
+            
+        .banner p{
+            font-size: 1.060rem;
+        }
+            
+            
+            
+    }
+    @media screen and (max-width:768px){
+        .banner h1{
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+    }
+            
+    /* Card Media Queary  */
+    @media screen and (max-width:995px){
+        .margincard-banner{
+            margin-top: -20%;
+           }
+        }
+           @media screen and (max-width:1140px){
+            .banner h1{
+                padding-top: 60px;
+            }
+        }     
+          
+       
+
+
+
+
+
+/*     
+
+rgba(238, 2, 121, 1)
+rgba(158, 0, 110, 1)
+*121 40 202 1
+*255 0 128 1
+1px=0.0625rem */

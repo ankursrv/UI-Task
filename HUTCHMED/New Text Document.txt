@@ -1,0 +1,33 @@
+    background-image: linear-gradient(310deg,#7928ca,#ff0080);
+
+
+element.style {
+    background-image: url(./assets/img/curved-images/curved1.jpg);
+}
+.page-header {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+.mask {
+    position: absolute;
+    background-position: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+.bg-cover, .mask {
+    background-size: cover;
+}
+.bg-gradient-primary {
+    background-image: linear-gradient(310deg,#7928ca,#ff0080);
+}

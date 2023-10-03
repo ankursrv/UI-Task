@@ -1,0 +1,117 @@
+:root{
+--text-primary-color: #283269;
+--text-secondary-color: #EE0279;
+--text-third-color:#9e006e;
+
+--primary-font:'Source Sans Pro', sans-serif;
+
+--btn-one-color: #97BB00;
+--btn-two-color: #38B5AB;
+--btn-three-color: #EE0279;
+--btn-four-color: #283269;
+
+--card-one-color: #FBFFE8;
+--card-two-color:   #D3FFFC;
+--card-three-color: #FFE9E9;
+--card-four-color: #E3E8FF;
+
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    
+}
+.nav-link:hover{
+    color: var(--text-secondary-color);
+}
+
+
+
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    line-height: 3.5rem;
+}
+h2{
+    font-size: 24px;
+    line-height: 3.5rem;
+    font-family: 400;
+}
+.banner{
+    /* background-image: linear-gradient(90deg,#EE0279,#9E006E), url("images/curved1.jpg"); */
+    width: 1200px;
+    height: 500px;
+background-image: url("images/curved1.jpg");
+}
+#med{
+    color: var(--text-secondary-color);
+}
+.bg-white{
+    color: var(--text-third-color);
+}
+#para-first{
+    color: white;
+}
+.banner{
+
+   
+  
+}
+.card{
+    box-shadow: 0 3px 16px 8px #0000001A;
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: -100px;
+    
+}
+.card-body P{
+    font-size: 1.2rem;
+}
+
+
+.btn{
+    font-size: 1.4rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--btn-one-color);
+    border: transparent;
+    border-radius: 80px;
+    color: white;
+    padding: 8px 25px 8px 20px;
+}
+    
+.card-body i{
+padding-left: 20px;
+}
+    
+/* card and card button color =============== */
+#card-one{
+    background-color: var(--card-one-color);
+}
+#card-two{
+    background-color: var(--card-two-color);
+}
+#card-three{
+    background-color: var(--card-three-color);
+}   
+#card-four{
+    background-color: var(--card-four-color);
+}
+#btn-one{
+    background-color: var(--btn-one-color);
+}
+
+#btn-two{
+    background-color: var(--btn-two-color);
+}
+#btn-three{
+    background-color: var(--btn-three-color);
+}
+
+#btn-four{
+    background-color: var(--btn-four-color);
+}
+
+
