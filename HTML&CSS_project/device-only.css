@@ -2,6 +2,9 @@
     .header-outer{
         display: flex; flex-direction: column; 
     }
+    .header-outer .logo{
+        display: none;
+    }
     .header-outer form{
         display: none;
     }
