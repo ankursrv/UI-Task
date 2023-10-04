@@ -9,16 +9,15 @@
     --blue: #125784;
     --purple: #5e35b1;
     --orange: #f57f17;
-
-    /* Heading */
-    h1,h2,h3,h4,h5,h6{
-        font-family: var(--parimary-font);
-    }
 }
 /* End  */
 /* ================================================================= */
 
 /* Custom CSs Start  */
+/* Heading */
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--parimary-font);
+}
 a{text-decoration: none;}
 li{list-style: none;}
 .d-flex{display: flex;}
@@ -28,14 +27,15 @@ body{font-family: var(--secondary-font);}
 /* End  */
 
 /** header Start  **/
-.header-outer{display: flex; align-items: center; justify-content: space-between; padding: 5px 10px 5px 25px; background: var(--blue);     position: fixed; left: 0; right: 0;}
+.header-outer{display: flex; align-items: center; justify-content: space-between; padding: 8px 10px 8px 25px; background: var(--blue); position: fixed; left: 0; right: 0;}
 
 .menu-link ul{display: flex;}
 .menu-link ul li a {padding-left: 1rem; border-left: 1.5px solid #fff;
 padding-right: 1rem; color: #fff;}
 .menu-link ul li:first-child a{border: none;}
 
-.header-outer form .input-box{outline: none;}
+.header-outer form .search-box{margin-right: 18px;}
+.header-outer form .search-box:focus{outline: none;}
 .header-outer form ::placeholder{font-weight: 700; color: #000;}
 
 /** Banner Start * */
@@ -71,6 +71,7 @@ padding-right: 1rem; color: #fff;}
 .contact-form{background: var(--purple);}
 .contact-form #contact{width: 50%; margin: auto; padding: 20px 0;}
 .contact-form #contact ul li{margin-bottom: 10px;}
+.contact-form #contact ul li:last-child{margin-bottom: 0;}
 .contact-form #contact ul li input,textarea{padding: 5px; border-radius: 0; border: 1px solid #000; width: 90%; outline: none;}
 .contact-form #contact ul li input[type="radio"]{width: inherit;}
 .contact-form #contact ul li input:focus{outline: none;}
