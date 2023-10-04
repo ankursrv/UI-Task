@@ -1,0 +1,83 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/* Variable CSS Start  */
+:root{
+    --parimary-font:'Montserrat', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+    /* Color  */
+    --blue: #125784;
+    --purple: #5e35b1;
+    --orange: #f57f17;
+
+    /* Heading */
+    h1,h2,h3,h4,h5,h6{
+        font-family: var(--parimary-font);
+    }
+}
+/* End  */
+/* ================================================================= */
+
+/* Custom CSs Start  */
+a{text-decoration: none;}
+li{list-style: none;}
+.d-flex{display: flex;}
+
+body{font-family: var(--secondary-font);}
+
+/* End  */
+
+/** header Start  **/
+.header-outer{display: flex; align-items: center; justify-content: space-between; padding: 5px 10px 5px 25px; background: var(--blue);     position: fixed; left: 0; right: 0;}
+
+.menu-link ul{display: flex;}
+.menu-link ul li a {padding-left: 1rem; border-left: 1.5px solid #fff;
+padding-right: 1rem; color: #fff;}
+.menu-link ul li:first-child a{border: none;}
+
+.header-outer form .input-box{outline: none;}
+.header-outer form ::placeholder{font-weight: 700; color: #000;}
+
+/** Banner Start * */
+.hero-banner {
+    background: linear-gradient(0deg, rgb(11 36 67 / 56%), rgb(50 46 48 / 25%)), url(./assets/images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 555px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-banner h1{color: #fff; text-align: center;}
+
+/* Title discription Start */
+.discription .discri-inner{align-items: center; justify-content: space-between; background-color: var(--orange); color: #FFF;}
+.discription .discri-inner .item-text {width: 70%; padding: 0 2rem;}
+.discription .discri-inner .item-text h3{margin-bottom: 1rem; font-weight: 400;}
+.discription .discri-inner .item-img{width: 25%; display: inline-flex;}
+.discription .discri-inner .item-img img{
+    width: 100%;
+    height: 200px;
+}
+
+/* GAllery Section Start */
+.gallery .gallery-1,.gallery .gallery-2,.gallery .gallery-3{
+    width: 33.333%;     display: inline-flex;
+}
+.gallery .gallery-1 img,.gallery .gallery-2 img,.gallery .gallery-3 img{width: 100%; height: auto;}
+
+/* Form section Start */
+.contact-form{background: var(--purple);}
+.contact-form #contact{width: 50%; margin: auto; padding: 20px 0;}
+.contact-form #contact ul li{margin-bottom: 10px;}
+.contact-form #contact ul li input,textarea{padding: 5px; border-radius: 0; border: 1px solid #000; width: 90%; outline: none;}
+.contact-form #contact ul li input[type="radio"]{width: inherit;}
+.contact-form #contact ul li input:focus{outline: none;}
+/* .contact-form #contact ul .btn-submit{width: 575px;} */
+.radio-field{color: #fff; margin: 5px 0;}
+
+/* Footer Start  */
+.footter-wrapper{padding: 30px; background: #000; align-items: center;}
+.ft-right{color: #fff; padding: 0 30px;}
+.ft-right p{font-weight: 300;}
